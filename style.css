@@ -1,36 +1,59 @@
-body {
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+ * {
+  box-sizing: border-box;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.nav ul {
-  list-style: none;
-  background-color: #000000;
-  text-align: center;
   padding: 0;
-  margin: 0;
-}
-.nav li {
-  font-size: 1.2em;
-  line-height: 40px;
-  height: 40px;
+  background: #24252a;
+ }
+
+ h1, li, a, button{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ecf0f1;
+  text-decoration: none;
+ }
+
+ header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+ }
+
+ .logo {
+  cursor: pointer;
+ }
+
+ .nav {
+  list-style: none;
+
+ }
+
+ .nav li {
   display: inline-block;
   padding: 0px 20px;
-
 }
 
-.nav a {
-  text-decoration: none;
-  color: #fff;
-  display: block;
+.nav li a {
+  transition: all 0.3s ease 0s;
 }
 
-.nav a:hover {
-  background-color: #005f5f;
-  padding: 0px 10px;
+.nav li a:hover{
+  color: #0088a9;
+  transition: all 0.3s ease 0s;
 }
 
-.nav a.active {
-  background-color: #ffffff;
-  color: #000000;
-  cursor: default;
+button {
+  padding: 9px 25px;
+  background: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+
+}
+button:hover{
+  background: rgba(0, 136, 169, 0.8);
 }
