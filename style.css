@@ -4,17 +4,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
  }
 
  body{
-  /* background: #ecf0f1; */
   background: rgb(238,174,202);
   background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
   color: #000000;
   font-family: "Montserrat", sans-serif;
  }
-
 
 .container {
   padding: 30px 10%;
@@ -26,7 +23,6 @@
   align-items: center;
  }
 
-
 h1, li, a, button{
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -34,7 +30,6 @@ h1, li, a, button{
 
   text-decoration: none;
  }
-
 
  .logo {
   cursor: pointer;
@@ -44,7 +39,6 @@ h1, li, a, button{
 
  .nav {
   list-style: none;
-
  }
 
  .nav li {
@@ -81,4 +75,34 @@ button:hover{
 
 .header-text h1 span{
   color: #0088a9;
+}
+
+
+/* About me section */
+#about{
+  padding: 80px 0;
+  color: #000000;
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-col-1 {
+  flex-basis: 35%;
+}
+
+.about-col-1 img{
+  width: 100%;
+  border-radius: 15px;
+
+}
+.about-col-2 {
+  flex-basis: 60%;
+}
+
+.sub-title{
+  font-size: 40px;
 }
