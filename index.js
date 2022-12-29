@@ -1,4 +1,17 @@
-// const h2 = document.createElement("h2");
-// h2.textContent = "is my javascript still working ";
 
-// document.querySelector("body").appendChild(h2);
+const tablinks = document.getElementsByClassName('tab-links')
+const tabcontents = document.getElementsByClassName('tab-contents')
+
+function opentab(tabname) {
+  for (tablink of tablinks){
+    tablink.classList.remove("active-link")
+  }
+  for (tabcontent of tabcontents){
+    tabcontent.classList.remove("active-tab")
+  }
+
+  event.currentTarget.classList.add("active-link")
+  document.getElementById(tabname).classList.add("active-tab")
+}
+
+
