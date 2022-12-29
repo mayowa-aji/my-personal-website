@@ -150,3 +150,9 @@ button:hover{
   display: block;
 }
 
+/* Hobbies section */
+#hobbies{
+  padding: 20px 0;
+  color: #000000;
+
+}
